@@ -1,0 +1,5 @@
+<jboss-app>
+  <loader-repository>
+    JBTear:archive=JBTear.ear
+  </loader-repository>
+</jboss-app>

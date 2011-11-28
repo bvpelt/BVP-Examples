@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="TodoJPA" transaction-type="JTA">
+	<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:MySqlDSTodo</jta-data-source>
+		
+		<class>nl.bsoft.jbt.dbase.Todo</class>
+		
+		<properties>
+		  <!-- 
+		    <property name="jboss.entity.manager.jndi.name" value="java:/Manager1"/>
+         	<property name="jboss.entity.manager.factory.jndi.name" value="java:/Manager1Factory"/>
+          -->
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost/todo" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+			
+			
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver" />
+			<property name="hibernate.connection.username" value="bvpelt" />
+			<property name="hibernate.connection.password" value="brtvnplt" />
+			<!-- 
+			<property name="hibernate.hbm2ddl" value="update" />
+			<property name="hibernate.hbm2ddl" value="create" />
+			 -->
+			<property name="hibernate.hbm2ddl" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>

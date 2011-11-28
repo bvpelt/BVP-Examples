@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="JBTear">
+        <wb-resource deploy-path="/" source-path="/EarContent"/>
+        <dependent-module archiveName="JBTejb.jar" deploy-path="/" handle="module:/resource/JBTejb/JBTejb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="JBTejbClient.jar" deploy-path="/" handle="module:/resource/JBTejbClient/JBTejbClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="JBTwar.war" deploy-path="/" handle="module:/resource/JBTwar/JBTwar">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="JBTUtil.jar" deploy-path="/lib" handle="module:/resource/JBTUtil/JBTUtil">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
